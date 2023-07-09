@@ -1,0 +1,14 @@
+@import '../variables';
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: $dark-green;
+    padding: 1rem;
+    
+    h1 {
+        color: $white;
+        font-weight: $thin-font-weight;
+    }
+}

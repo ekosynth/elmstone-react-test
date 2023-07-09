@@ -1,0 +1,16 @@
+@import '../variables';
+
+.bird-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;  // Adjust this to create the desired space between your grid items
+  width: 70%; // Sets the grid width to be 70% of its parent's width
+  margin: 0 auto; // Centers the grid horizontally in its parent
+  background-color: $light-green;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr; // This collapses the grid to one column on screens less than 600px wide
+    }
+}

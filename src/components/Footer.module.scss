@@ -1,0 +1,16 @@
+@import '../variables';
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $dark-green;
+    z-index: 100;
+    padding: 1rem;
+ 
+    h1 {
+        color: $white;
+        font-weight: $thin-font-weight;
+    }
+}
+  

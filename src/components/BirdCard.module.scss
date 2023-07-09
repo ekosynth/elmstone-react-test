@@ -1,0 +1,25 @@
+@import '../variables';
+
+.birdCard {
+    display: flex;
+    flex-direction: row; // Items are now aligned horizontally
+    align-items: center; // Vertically align items in the middle
+    margin-bottom: 20px;
+}
+
+.birdImage {
+    width: 200px; // Adjust as needed
+    height: 200px; // Adjust as needed
+    object-fit: cover; // This ensures that your image covers the whole area of the div, cropping if necessary. 
+    border-radius: 50%; // This makes the image circular
+    margin-right: 20px; // Space between the image and the text
+}
+
+.birdInfo {
+    font-family: $font-varela-round;
+    color: $dark-green;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; // Aligns items to the start of the flex container
+    text-align: left; // This aligns the text to the left
+}
