@@ -1,5 +1,5 @@
 export interface IBird {
-  name: string;
-  description: string;
-  img: string;
+    name: string;
+    description: string;
+    img: string;
 }

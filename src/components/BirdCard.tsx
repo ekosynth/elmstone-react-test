@@ -1,6 +1,6 @@
-import React from 'react'
-import { IBird }  from '../types'
-import styles from './BirdCard.module.scss';
+import React from "react";
+import { IBird } from "../types";
+import styles from "./BirdCard.module.scss";
 
 interface BirdCardProps {
     key: number;
@@ -8,7 +8,6 @@ interface BirdCardProps {
 }
 
 const BirdCard = (props: BirdCardProps): JSX.Element => {
-
     const { name, description, img } = props.bird;
     return (
         <div className={styles.birdCard}>
@@ -18,7 +17,7 @@ const BirdCard = (props: BirdCardProps): JSX.Element => {
                 <p>{description}</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default BirdCard;
