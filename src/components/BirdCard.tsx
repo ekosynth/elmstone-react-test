@@ -8,13 +8,13 @@ interface BirdCardProps {
 }
 
 const BirdCard = (props: BirdCardProps): JSX.Element => {
-    const { name, description, img } = props.bird;
+    const { name, description, latinName, img } = props.bird;
     return (
         <div className={styles.birdCard}>
-            <img src={img} alt={name} className={styles.birdImage} />
+            <img src={img} alt={description} title={description} className={styles.birdImage} />
             <div className={styles.birdInfo}>
                 <h2>{name}</h2>
-                <p>{description}</p>
+                <p>{latinName}</p>
             </div>
         </div>
     );
